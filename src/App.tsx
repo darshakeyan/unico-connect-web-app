@@ -1,7 +1,11 @@
+import AppShell from 'components/AppShell';
+import React from 'react';
 
 function App() {
   return (
-    <div className='text-white bg-red-400'>CRA with Typescript + TailwindCSS</div>
+    <AppShell>
+      <div>Outlet</div>
+    </AppShell>
   );
 }
 
