@@ -1,4 +1,4 @@
-![Screenshot 2023-09-24 at 8 54 28 PM](https://github.com/darshakeyan/unico-connect-web-app/assets/61287039/e6c189be-27ee-4d9d-9d1e-1ad03c2bf606)## Unico Connect Replica 
+## Unico Connect Replica 
 
 This project was built using CRA + Typescript + TailwindCSS 
 
