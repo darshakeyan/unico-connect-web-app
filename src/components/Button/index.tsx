@@ -43,12 +43,11 @@ const Button = ({
     active = false,
 }: ButtonProps) => {
     const [hovered, hoverEvents] = useHover();
-
     const styles = useMemo(
         () =>
             clsx(
                 {
-                    'flex justify-center items-center bg-primary-500 text-white rounded-16xl hover:bg-primary-600 active:bg-primary-700 disabled:text-neutral-400 disabled:border-none disabled:bg-neutral-200':
+                    'flex justify-center items-center bg-primary-500 rounded-16xl hover:bg-primary-600 active:bg-primary-700 disabled:text-neutral-400 disabled:border-none disabled:bg-neutral-200':
                         variant === Variant.Primary,
                 },
                 {

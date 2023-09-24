@@ -14,7 +14,6 @@ const navigations = [
     {
         label: 'Case Study',
         linkTo: '/case-study',
-
     },
     {
         label: 'Pricing Plan',
@@ -34,35 +33,22 @@ const navigations = [
 const Navbar = () => {
     return (
         <header className="sticky top-0 z-50">
-            <div className="bg-white shadow h-20 w-full flex items-center justify-center px-8 space-x-12">
-                <Logo />
-                <div className="md:flex hidden items-center space-x-8">
+            <div className="bg-white shadow-lg h-20 w-full flex items-center justify-center px-8 space-x-24">
+                <div className='z-50 p-5 md:w-auto w-full'>    
+                    <Logo />
+                </div>
+                <div className="md:flex hidden items-center space-x-6">
                     {navigations.map((nav) =>
                         <div
-                            className="flex flex-col items-center"
-                            key={nav.label}
+                        className="flex"
+                        key={nav.label}
                         >
-
-                            <div className="text-sm text-neutral-900 cursor-default">
+                            <div className="text-sm text-neutral-900 cursor-pointer">
                                 {nav.label}
                             </div>
                         </div>
                     )}
                     <Button label={'Get in Touch'} className='bg-neutral-800 text-sm text-white hover:bg-blue-500' variant={Variant.Primary} size={Size.Large} />
-                </div>
-
-                {/* Mobile Nav*/}
-                <div>
-                    {navigations.map((nav) =>
-                        <div
-                            className=""
-                            key={nav.label}
-                        >
-                            <div className="text-sm text-neutral-900 cursor-default">
-                                {nav.label}
-                            </div>
-                        </div>
-                    )}
                 </div>
             </div>
         </header>
